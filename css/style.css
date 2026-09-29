@@ -111,7 +111,7 @@ a.sitename {
 }
 #searchbar form {
 	display: inline-block;
-*float: right; /** Needed for IE7 **/
+	float: right; /** Needed for IE7 **/
 }
 #searchbar form input {
 	float: left;
@@ -133,7 +133,7 @@ a.sitename {
 /*------------------------------ CONTENTS ------------------------------*/
 #contents {
 	background: url(../images/content-shadow.png) no-repeat right bottom;
-*display: inline-block; /** Needed for IE7 **/
+	display: inline-block; /** Needed for IE7 **/
 }
 #contents:after {
 	clear:both;
@@ -200,7 +200,7 @@ a.sitename {
 	margin: 0 24px 0 12px;
 	padding: 12px 12px 22px;
 }
-#main div.body {
+#main .body {
 	padding: 0 30px;
 }
 /** list **/
@@ -273,6 +273,144 @@ a.sitename {
 	filter:alpha(opacity=80);
 	opacity: 0.8;
 }
+/** register form **/
+#register h1 {
+	margin: 0 0 24px;
+}
+#register form fieldset {
+	border: 1px solid #c3baaf;
+	margin: 0 0 18px;
+	padding: 12px 18px 6px;
+}
+#register form legend {
+	color: #300302;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0 6px;
+}
+#register form p.field {
+	padding: 0 0 14px;
+	text-align: left;
+}
+#register form label {
+	color: #525252;
+	display: block;
+	font-size: 14px;
+	line-height: 22px;
+}
+#register form label.inline {
+	display: inline;
+}
+#register form input[type="text"],
+#register form input[type="email"],
+#register form input[type="password"],
+#register form input[type="tel"],
+#register form input[type="date"],
+#register form input[type="number"] {
+	border: 1px solid #c3baaf;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+	height: 22px;
+	width: 220px;
+	margin: 4px 0 0;
+	padding: 2px 4px;
+}
+#register form input[type="radio"],
+#register form input[type="checkbox"] {
+	margin: 0 4px 0 0;
+	vertical-align: middle;
+}
+#register form span.choices {
+	display: block;
+	padding: 8px 0 0;
+}
+#register form span.choices label.inline {
+	margin: 0 14px 0 0;
+}
+#register form select {
+	border: 1px solid #c3baaf;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+	width: 160px;
+	margin: 4px 0 0;
+	padding: 2px;
+}
+#register form textarea {
+	border: 1px solid #c3baaf;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+	width: 320px;
+	margin: 4px 0 0;
+	padding: 4px;
+}
+#register form p.buttons {
+	padding: 10px 0 0;
+	text-align: left;
+}
+#register form p.buttons input {
+	border: 0;
+	margin: 0 8px 0 0;
+}
+/** media **/
+#media .meta {
+	color: #7e501c;
+	font-size: 13px;
+	padding: 0 0 24px;
+	text-align: left;
+}
+#media .meta address {
+	display: inline;
+	font-style: normal;
+}
+#media .meta a {
+	color: #7e501c;
+}
+#media figure {
+	margin: 0 0 24px;
+	text-align: center;
+}
+#media figure img {
+	border: 0;
+	height: auto;
+	max-width: 100%;
+}
+#media figcaption {
+	color: #525252;
+	font-size: 13px;
+	line-height: 22px;
+	padding: 8px 0 0;
+	text-align: left;
+}
+#media section h2 {
+	color: #300302;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 24px;
+	margin: 0 0 18px;
+	text-align: center;
+}
+#media video {
+	display: block;
+	height: auto;
+	max-width: 100%;
+	margin: 0 auto 24px;
+}
+#media audio {
+	display: block;
+	width: 100%;
+	max-width: 360px;
+	margin: 0 0 24px;
+}
+#media iframe {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: 300px;
+	margin: 0 0 24px;
+}
+#media footer p {
+	padding: 0;
+}
 /** SIDEBAR **/
 #sidebar {
 	float: left;
@@ -280,7 +418,7 @@ a.sitename {
 	width: 229px;
 	margin-left: 5px;
 }
-#sidebar div.section {
+#sidebar .section {
 	background: url(../images/box-shadow-bottom.png) no-repeat left bottom;
 	margin: 0 0 24px;
 	padding: 0 0 6px;
